@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../fontawesome/css/all.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+
+
+    <title>Weterynarz.pl | Twój pupil jest w dobrych rękach</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light navigation">
+        <div class="container">
+            <a class="navbar-brand navigation__logo-box" href="../index.html" data-aos="fade-left">
+                <img src="../img/logo.png" class="d-inline-block align-top navigation__logo" alt="logo image">
+            </a>
+            <label class="hamburger" for="toggle" data-aos="zoom-in-down">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="../index.html">Strona główna</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link navigation__link" href="../#uslugi">Usługi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="../#o-nas">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="../#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section-offer">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="../img/cats-banner.png" alt="uśmiechnięte psy" class="offer__header-img">
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title offer__title">
+                <h2 class="header-secondary sectionTitle">Dla kotów</h2>
+            </div>
+            <div class="row justify-content-center offer__btn-group">
+                <a href="#oferta" active class="button-primary offer__btn" id="oferta" data-index="0">Pełna
+                    oferta</a>
+                <a href="#cennik" class="button-primary offer__btn" data-index="1" id="cennik">Cennik</a>
+                <a href="#aktualnosci" class="button-primary offer__btn" data-index="2" id="aktualnosci">Aktualności</a>
+            </div>
+            <div class="row justify-content-center">
+                <i class="fas fa-arrow-alt-circle-left arrow arrow--left prevBtn"></i>
+                <input type="range" name="page-select" id="dogs-pages" class="offer__range col-10 rangeInput" min="0"
+                    max="2" value="0">
+                <i class="fas fa-arrow-alt-circle-right arrow arrow--right nextBtn"></i>
+
+            </div>
+            <div class="row offer__services">
+                <div class="col-md-6">
+                    <ul class="offer__services-list">
+                        <li class="offer__list-item">Przycinanie pazurków</li>
+                        <li class="offer__list-item">Strzyżenie</li>
+                        <li class="offer__list-item">Czyszczenie zębów</li>
+                        <li class="offer__list-item">Szczepienia</li>
+                        <li class="offer__list-item">Zabiegi chirurgiczne</li>
+                        <li class="offer__list-item">Karmy weterynaryjne</li>
+                        <li class="offer__list-item">Ochrona przeciw kleszczom i pchłom</li>
+                        <li class="offer__list-item">Odrobaczanie</li>
+                        <li class="offer__list-item">USG</li>
+                        <li class="offer__list-item">Zdjęcia X-Ray</li>
+                    </ul>
+                </div>
+                <div class="col-4 d-none d-md-block">
+                    <img src="../img/cat-bg.png" alt="cute cat" class="offer__image-primary">
+                </div>
+            </div>
+            <div class="row justify-content-center offer__prices">
+                <table class="prices__table table table-striped col-10">
+                    <thead class="prices__thead">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Usługa</th>
+                            <th scope="col">Cena</th>
+                            <th scope="col">Wymagana rezerwacja</th>
+                        </tr>
+                    </thead>
+                    <tbody class="prices__tbody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Przycinanie pazurków</td>
+                            <td>50 zł</td>
+                            <td>Nie</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Strzyżenie</td>
+                            <td>60 zł</td>
+                            <td>Tak</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Czyszczenie zębów</td>
+                            <td>200 zł</td>
+                            <td>Tak</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Szczepienia</td>
+                            <td>Do uzgodnienia</td>
+                            <td>Tak</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Zabiegi chirurgiczne</td>
+                            <td>Do uzgodnienia</td>
+                            <td>Tak</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Karmy weterynaryjne</td>
+                            <td>Do uzgodnienia</td>
+                            <td>Nie</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ochrona przeciw kleszczom</td>
+                            <td>30 - 150 zł</td>
+                            <td>Nie</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Odrobaczanie</td>
+                            <td>30 - 60 zł</td>
+                            <td>Nie</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>USG</td>
+                            <td>50 - 100 zł</td>
+                            <td>Nie</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>X-Ray</td>
+                            <td>50zł</td>
+                            <td>Tak</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--ARTICLES-->
+            <div class="offer__articles">
+                <div class="media article">
+                    <img src="../img/tick.jpg" class="mr-3 article__header-image" alt="kleszcz">
+                    <div class="media-body">
+                        <h3 class="mt-0 header-tertiary">Kleszcze w natarciu!</h3>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus distinctio
+                            veritatis numquam aliquid. Ipsum, illum eligendi blanditiis odio adipisci ex, officiis nulla
+                            aliquam assumenda omnis placeat, tempore error in.</p>
+                        <a href="#" class="button-primary article__button">Do artykułu</a>
+                    </div>
+                </div>
+
+                <div class="media article">
+                    <img src="../img/tick.jpg" class="mr-3 article__header-image" alt="kleszcz">
+                    <div class="media-body">
+                        <h3 class="mt-0 header-tertiary">Kleszcze w natarciu!</h3>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus distinctio
+                            veritatis numquam aliquid. Ipsum, illum eligendi blanditiis odio adipisci ex, officiis nulla
+                            aliquam assumenda omnis placeat, tempore error in.</p>
+                        <a href="#" class="button-primary article__button">Do artykułu</a>
+                    </div>
+                </div>
+
+                <div class="media article">
+                    <img src="../img/tick.jpg" class="mr-3 article__header-image" alt="kleszcz">
+                    <div class="media-body">
+                        <h3 class="mt-0 header-tertiary">Kleszcze w natarciu!</h3>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus distinctio
+                            veritatis numquam aliquid. Ipsum, illum eligendi blanditiis odio adipisci ex, officiis nulla
+                            aliquam assumenda omnis placeat, tempore error in.</p>
+                        <a href="#" class="button-primary article__button">Do artykułu</a>
+                    </div>
+                </div>
+
+                <div class="media article">
+                    <img src="../img/tick.jpg" class="mr-3 article__header-image" alt="kleszcz">
+                    <div class="media-body">
+                        <h3 class="mt-0 header-tertiary">Kleszcze w natarciu!</h3>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus distinctio
+                            veritatis numquam aliquid. Ipsum, illum eligendi blanditiis odio adipisci ex, officiis nulla
+                            aliquam assumenda omnis placeat, tempore error in.</p>
+                        <a href="#" class="button-primary article__button">Do artykułu</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="page-footer font-small footer">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#">Lucas Rozwadowski</a>
+        </div>
+    </footer>
+
+    <script src="../lib/page.js"></script>
+    <script src="../lib/navigation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../lib/aosINIT.js"></script>
+
+
+</body>
+
+</html>

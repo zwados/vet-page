@@ -1,0 +1,50 @@
+.section-contact {
+    background-image: url(../img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        margin-top: -12rem;
+    }
+
+
+
+    &__form {
+        display: block;
+        margin-top: 8em;
+    }
+}
+
+.contact-form {
+
+
+    &__submit {
+        align-self: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    &__label {
+        font-size: 1.7rem;
+        color: $color-dark;
+        width: 100%;
+        transition: all .2s linear;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        transition: all .2s linear;
+
+        &:active,
+        &:focus,
+        &:hover {
+            border-color: $color-green-primary;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba($color-green-primary, 0.6);
+        }
+
+        &--textarea {
+            height: 12rem !important;
+        }
+    }
+}

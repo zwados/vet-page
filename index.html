@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <title>Weterynarz.pl | Twój pupil jest w dobrych rękach</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light navigation">
+        <div class="container">
+            <a class="navbar-brand navigation__logo-box" href="index.html" data-aos="fade-left">
+                <img src="img/logo.png" class="d-inline-block align-top navigation__logo" alt="logo image">
+            </a>
+            <label class="hamburger" for="toggle" data-aos="zoom-in-down">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="/index.html">Strona główna</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link navigation__link" href="#uslugi">Usługi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="#o-nas">O nas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation__link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="hero" data-aos="zoom-in">
+        <div id="carouselExampleCaptions" class="carousel slide slideshow" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner slideshow__item  ">
+                <div class="carousel-item active">
+                    <img src="img/dogs-bg.png" class="d-block w-100 slider-image" alt="...">
+                    <div class="carousel-caption d-md-block slideshow__captions">
+                        <h1 class="header-primary-slider">Zadbaj o swojego psa</h5>
+                            <p class="header-subtitle-slider">Sprawdź czego potrzebuje Twój najlepszy przyjaciel.
+                            </p>
+                            <a href="/pages/psy.html" class="button-primary slideshow__button"
+                                data-aos="zoom-in-right">Sprawdź</a>
+                    </div>
+                </div>
+                <div class="carousel-item slideshow__item">
+                    <img src="img/cats-bg.png" class="d-block w-100 slider-image" alt="...">
+                    <div class="carousel-caption d-md-block slideshow__captions">
+                        <h1 class="header-primary-slider">Masz kota na punkcie... kota?</h5>
+                            <p class="header-subtitle-slider">Specjalizujemy się w usługach dla małych "tygrysów"
+                            </p>
+                            <a href="/pages/koty.html" class="button-primary slideshow__button">Sprawdź</a>
+                    </div>
+                </div>
+                <div class="carousel-item slideshow__item">
+                    <img src="img/other-bg.png" class="d-block w-100 slider-image" alt="...">
+                    <div class="carousel-caption d-md-block slideshow__captions">
+                        <h1 class="header-primary-slider">Twój zwierzak potrzebuje pomocy?</h5>
+                            <p class="header-subtitle-slider">Skontaktuj się z nami niezwłocznie i potwierdź dostępność
+                                lekarza</p>
+                            <a href="#uslugi" class="button-primary slideshow__button">Sprawdź</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev slideshow__control" href="#carouselExampleCaptions" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next slideshow__control" href="#carouselExampleCaptions" role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!--Pets-->
+    <section class="pets container-fluid" id="uslugi" data-aos="zoom-in">
+        <div class="section-title pets__title">
+            <h2 class="header-secondary">Świadczone usługi</h2>
+            <h3 class="header-tertiary">Sprawdź jak pomagam zwierzętom</h3>
+        </div>
+        <div class="container">
+            <div class="row pets__background">
+                <div class="card col-lg col-md-6 pets-category" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/dog.png" class="card-img-top pets-category__img" alt="...">
+                    <div class="card-body">
+                        <h5 class="pets-category__name">Psy</h5>
+                        <a href="#/psy" class="pets__link" id="dogs">więcej &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg col-md-6 pets-category" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/cat.png" class="card-img-top pets-category__img" alt="...">
+                    <div class="card-body">
+                        <h5 class="pets-category__name">koty</h5>
+                        <a href="#koty" class="pets__link cats" id="cats">więcej &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg col-md-6 pets-category" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/rabbit.png" class="card-img-top pets-category__img" alt="...">
+                    <div class="card-body">
+                        <h5 class="pets-category__name">gryzonie</h5>
+                        <a href="#/gryzonie" class="pets__link rodents" id="rodents">więcej &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg col-md-6 pets-category" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/parrot.png" class="card-img-top pets-category__img" alt="...">
+                    <div class="card-body">
+                        <h5 class="pets-category__name">ptaki</h5>
+                        <a href="#/ptaki" class="pets__link birds" id="birds">więcej &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card col-lg col-md-6 pets-category" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="img/fish.png" class="card-img-top pets-category__img" alt="...">
+                    <div class="card-body">
+                        <h5 class="pets-category__name">ryby</h5>
+                        <a href="#ryby" class="pets__link fish" id="fish">więcej &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 category__services" data-aos="fade-right">
+
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-lg-7 col-md-9 category__services-description">
+                        <h2 class="header-secondary categoryTitle">Zadbaj o swojego psa</h2>
+                        <h3 class="header-tertiary categorySubtitle">Najczęściej poszukiwane usługi</h3>
+                        <ul class="category__services-list categoryServicesList">
+                            <li class="categoryServicesItem">Szczepienia</li>
+                            <li class="categoryServicesItem">Badanie krwii</li>
+                            <li class="categoryServicesItem">USG</li>
+                            <li class="categoryServicesItem">Zdjęcia Roentgen</li>
+                            <li class="categoryServicesItem">Karmy weterynaryjne</li>
+                            <li class="categoryServicesItem">Odrobaczanie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 category__cta" data-aos="fade-up">
+                <h2 class="header-secondary">Nadal szukasz?</h2>
+                <a href="pages/psy.html" class="button-primary" id="categoryEnter">Więcej</a>
+            </div>
+        </div>
+    </section>
+    <section class="container section-customers" id="o-nas">
+        <div class="row justify-content-center">
+            <h2 class="header-secondary customers__title" data-aos="zoom-in-left">Za co cenią nas klienci?</h2>
+        </div>
+        <div class="row align-items-center justify-content-center">
+
+
+            <div class="col-lg-3 col-md-6 col-8">
+                <div class="container">
+                    <div class="col-12" data-aos="zoom-in-left">
+                        <div class="customers__icon-box">
+                            <img src="img/paw-icon.svg" alt="paw icon" class="customers__icon">
+                        </div>
+                        <div class="customers__description">
+                            <h3 class="header-tertiary">Pomagamy od 25 lat</h3>
+                            <p>Pomogliśmy setkom zwierząt i ich
+                                właścicielom, oferując usługi
+                                najwyższej jakości</p>
+                        </div>
+                    </div>
+                    <div class="col-12" data-aos="zoom-in-right">
+                        <div class="customers__icon-box">
+                            <img src="img/syringe-icon.svg" alt="paw icon" class="customers__icon">
+                        </div>
+                        <div class="customers__description">
+                            <h3 class="header-tertiary">Najnowsze szczepionki</h3>
+                            <p>Co roku szczepimy setki zwierząt
+                                domowych przed najgroźniejszymi
+                                wirusami i ich nowymi odmianami</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-8" data-aos="zoom-in-left">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="customers__icon-box">
+                            <img src="img/doctor-icon.svg" alt="paw icon" class="customers__icon">
+                        </div>
+                        <div class="customers__description">
+                            <h3 class="header-tertiary">Renomowana kadra</h3>
+                            <p>Nasi lekarze to absolwenci
+                                prestiżowych uczelni, którzy
+                                posiadają wieloletni staż</p>
+                        </div>
+                    </div>
+                    <div class="col-12" data-aos="zoom-in-right">
+                        <div class="customers__icon-box">
+                            <img src="img/paw-icon.svg" alt="paw icon" class="customers__icon">
+                        </div>
+                        <div class="customers__description">
+                            <h3 class="header-tertiary">Szeroki asortyment</h3>
+                            <p>W naszym sklepie znajdziecie
+                                karmy nawet dla najbardziej
+                                wymagających milusińskich</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-11">
+                <div class="column-container customers__main" data-aos="fade-right">
+                    <h3 class="header-tertiary">Liczy się pasja i miłość do zwierząt</h3>
+                    <p>Każde zwierze wymaga indywidualnego podejścia i zrozumienia.
+                        Naszych pacjentów traktujemy z należytą uwagą i nie
+                        bagatelizujemy ich potrzeb</p>
+                    <p>
+                        Możecie być pewni, że wasi pupile trafili do najlepszych specjalistów,
+                        a także ludzi pełnych miłości do zwierząt, niezależnie od gatunku.
+                    </p>
+                    <p>
+                        Możemy się pochwalić długotrwałą obecnością na rynku oraz rzeszą
+                        stałych klientów.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section-contact" id="kontakt" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title section-contact__title">
+                <h2 class="header-secondary" data-aos="zoom-in-down">Kontakt</h2>
+                <h3 class="header-tertiary" data-aos="zoom-in-down">Jak możemy Ci pomóc?</h3>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
+                    <form class="section-contact__form">
+                        <div class="form-group" data-aos="fade-up">
+                            <label class="contact-form__label" for="email">Twój email:</label>
+                            <input type="email" class="contact-form__input form-control" id="email"
+                                placeholder="imię@zoo.pl">
+                        </div>
+                        <div class="form-group" data-aos="fade-up">
+                            <label class="contact-form__label" for="telephone">Twój numer telefonu:</label>
+                            <input type="phone" class="contact-form__input form-control" id="telephone"
+                                placeholder="wpisz numer telefonu">
+                        </div>
+                        <div class="form-group" data-aos="fade-up">
+                            <label class="contact-form__label" for="animal">Twój zwierzak to:</label>
+                            <input type="text" class="contact-form__input form-control" id="animal"
+                                placeholder="gatunek / rasa / wiek">
+                        </div>
+                        <div class="form-group" data-aos="fade-up">
+                            <label class="contact-form__label" for="subject">O co chciałbyś zapytać?</label>
+                            <input type="text" class="contact-form__input form-control" id="subject"
+                                placeholder="wpisz temat">
+                        </div>
+                        <div class="form-group" data-aos="fade-up">
+                            <label class="contact-form__label" for="message-text">Wiadomość:</label>
+                            <textarea class="contact-form__input contact-form__input--textarea form-control"
+                                id="message-text" rows="3"></textarea>
+                        </div>
+                        <div class="row justify-content-center" data-aos="zoom-in-right">
+                            <button type="submit" class="contact-form__submit btn button-primary">Submit</button>
+                        </div>
+                    </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small footer">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#">Lucas Rozwadowski</a>
+        </div>
+    </footer>
+
+
+    <script src="lib/script.js"></script>
+    <script src="lib/navigation.js"></script>
+    <script src="lib/smoothScroll.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="lib/aosINIT.js"></script>
+
+</body>
+
+</html>

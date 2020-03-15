@@ -1,0 +1,119 @@
+.navigation {
+    font-family: "helvetica neue", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    width: 100%;
+    z-index: 5000;
+    position: absolute;
+    top: 0;
+
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+
+    &__item {
+        clear: right;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-dark;
+
+        &:active,
+        &:target,
+        &:hover {
+            color: $color-green-secondary;
+            text-shadow: 0 0 0.01px $color-green-primary;
+            transform: translate(-1px, 1px);
+        }
+    }
+
+
+    &__logo {
+        width: 20rem;
+    }
+}
+
+.hamburger {
+    position: relative;
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    float: right;
+
+    &:hover {
+        color: $color-green-primary;
+    }
+
+    &:checked .hamburger {
+        color: $color-green-primary;
+    }
+}
+
+#toggle {
+    display: none;
+}
+
+@include sm {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        line-height: 45px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        width: 100%;
+        display: none;
+        z-index: 3000;
+        background-image: linear-gradient(to right bottom, rgba($color-green-primary, .8), rgba($color-green-secondary, .8));
+        border-top: 1px solid #EAEAEB;
+        opacity: 0;
+    }
+
+    .nav .navigation__item {
+        display: flex;
+        border-bottom: 1px solid #EAEAEB;
+    }
+
+    .navigation__link {
+        color: #fff;
+    }
+
+    #toggle:checked+.hamburger {
+        color: $color-green-primary;
+    }
+
+    #toggle:checked+.nav {
+        display: flex;
+    }
+
+    .navigation {
+        height: 50px;
+
+        &__logo {
+            width: 15rem;
+
+        }
+
+        &__logo-box {
+            margin: 0 auto;
+            line-height: 30px;
+        }
+    }
+
+}
+
+.dropdown-menu.show {
+    display: flex;
+    position: absolute;
+    right: 0;
+
+}

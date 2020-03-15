@@ -1,0 +1,108 @@
+.offer {
+    &__header-img {
+        width: 100vw;
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__btn:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+
+
+
+    &__btn-group {
+        margin-bottom: 3rem;
+    }
+
+    &__range {
+        align-self: center;
+    }
+
+    &__services {
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+    }
+
+    &__services-list {
+        margin-top: 4rem;
+
+        @include xs {
+            margin-top: 0;
+        }
+    }
+
+    &__articles {
+        flex-direction: column;
+        opacity: 0;
+        display: none;
+    }
+
+    &__list-item {
+        font-size: 2rem;
+        color: #434343;
+        margin-bottom: 1.5rem;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 1.5rem;
+            width: 1.5rem;
+            background-image: url(../img/icon-services.png);
+            background-size: contain;
+            margin-right: 1rem;
+        }
+    }
+
+    &__prices {
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+        opacity: 0;
+        display: none;
+    }
+
+    &__image-primary {
+        width: 80%;
+    }
+
+
+}
+
+.arrow {
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #9f9f9f;
+    transition: all .2s linear;
+
+    &:hover {
+        color: rgb(114, 255, 79);
+    }
+
+    @include sm {
+        display: none;
+    }
+}
+
+.prices {
+
+    &__thead {
+        background-color: rgb(114, 255, 79);
+        font-size: 2rem;
+        color: white;
+
+        @include sm {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__tbody {
+        font-size: 1.5rem;
+
+        @include sm {
+            font-size: 1.2rem;
+        }
+    }
+}

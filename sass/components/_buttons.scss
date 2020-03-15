@@ -1,0 +1,27 @@
+.button-primary {
+    background-image: linear-gradient(to right bottom, $color-green-primary, $color-green-secondary);
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    color: white !important;
+    display: inline-block;
+    box-shadow: 0 .5rem 1.5rem rgba(222, 222, 222, 0.9);
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+
+    @include sm {
+        font-size: 1.3rem;
+        padding: .8rem 2.1rem;
+    }
+
+    &:target,
+    &:hover {
+        color: #343434 !important;
+        background-image: none;
+        background-color: #fff;
+        box-shadow: 0 1rem 3rem rgba(222, 222, 222, 0.9);
+        transform: translateY(-2px);
+        outline-color: transparent;
+    }
+}
