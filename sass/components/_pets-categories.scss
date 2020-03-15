@@ -1,0 +1,90 @@
+.pets {
+    background: url('/img/pets-bg.svg');
+    background-size: 80vw;
+    background-position: center;
+    background-position-y: 90%;
+    margin-bottom: 7rem;
+
+    background-repeat: no-repeat;
+
+    @include md {
+        margin-bottom: 0;
+        height: auto;
+        background: none;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        position: relative;
+        transition: all .2s linear;
+        font-size: 1.5rem;
+        display: block;
+        text-align: center;
+        backface-visibility: hidden;
+        opacity: 0;
+        color: rgb(90, 207, 61);
+
+        &:active,
+        &:hover {
+            text-decoration: none;
+            color: green;
+            transform: scale(1.03) translateX(3px);
+        }
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+.pets-category {
+    border: none;
+    background-color: transparent;
+    display: flex;
+
+    @include sm {}
+
+    &:hover .pets-category__img {
+        box-shadow: 0 -15px 45px rgb(90, 207, 61);
+        border-color: rgb(90, 207, 61);
+    }
+
+    &:hover .pets__link {
+        opacity: 1;
+    }
+
+    &__name {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        border-radius: 100%;
+        border: 1px solid lightgrey;
+        height: 16rem;
+        width: 16rem;
+        box-shadow: 0 .5rem 1.5rem rgba(222, 222, 222, 0.9);
+        transition: all .3s linear;
+        align-self: center;
+    }
+
+    &:nth-of-type(odd) {
+        position: relative;
+        top: 100px;
+
+        @include md {
+            top: 0;
+
+        }
+    }
+
+    &:last-of-type {
+        @include md {
+            margin: 0rem auto;
+        }
+    }
+
+
+}

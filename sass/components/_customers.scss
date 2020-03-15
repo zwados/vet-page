@@ -1,0 +1,54 @@
+.section-customers {}
+
+.customers {
+    &__title {}
+
+    &__main {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    &__description {
+        border-radius: 1.5rem;
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+        background-color: #F2F2F2;
+        box-shadow: 0 .5rem 1.5rem rgba(222, 222, 222, 0.9);
+        margin-bottom: 2rem;
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__icon {
+        height: 6rem;
+        width: 6rem;
+
+    }
+
+    &__icon-box {
+        display: inline-block;
+        position: relative;
+        top: 2rem;
+        background-image: linear-gradient(to right bottom, rgb(114, 255, 79), rgb(90, 207, 61));
+        padding: 2rem;
+        border-radius: 100%;
+
+    }
+
+    &__link {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+
+        @include sm {
+            margin-bottom: 8rem;
+            margin-top: 3rem;
+        }
+
+        @include xs {
+            margin-bottom: 7rem;
+            margin-top: 2rem;
+        }
+
+    }
+}

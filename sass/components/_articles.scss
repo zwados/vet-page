@@ -1,0 +1,35 @@
+.article {
+    border: 1px solid #eaeaeb;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: .2rem .3rem 1.8rem -.1rem rgba(89, 89, 89, .5);
+    -moz-box-shadow: .2rem .3rem 1.8rem -.1rem rgba(89, 89, 89, .5);
+    box-shadow: .2rem .3rem 1.8rem -.1rem rgba(89, 89, 89, .5);
+
+    @include xs {
+        flex-direction: column;
+    }
+
+    &__header-image {
+        width: 20rem;
+        border-radius: 3px;
+
+        @include xs {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__button {
+        float: right;
+    }
+
+    &:first-of-type {
+        margin-top: 6rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 8rem;
+    }
+}

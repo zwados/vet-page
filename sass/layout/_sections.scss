@@ -1,0 +1,42 @@
+.section-offer {
+    padding-top: 70px;
+}
+
+.section-customers {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    @include md {
+        margin-bottom: 1rem;
+    }
+
+    & h2 {
+        margin-bottom: 4rem;
+
+        @include sm {
+            margin-bottom: 3rem;
+        }
+
+        @include xs {
+            margin-bottom: 2rem;
+        }
+    }
+
+    & h3 {
+        margin-bottom: 2rem;
+
+        @include sm {
+            margin-bottom: 1rem;
+        }
+
+        @include xs {
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+
+
+section {
+    padding-top: 12rem;
+}
